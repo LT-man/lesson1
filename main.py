@@ -1,0 +1,23 @@
+import cv2, os
+opencv = cv2.imread("Opencv.png")
+"""cv2.imshow("screen", opencv)
+cv2.waitKey(0)
+pikachu = cv2.imread("pikachu.png", 0)
+cv2.imshow("screen2", pikachu)
+cv2.waitKey(0)
+path = "/Users/laury/Pictures/Saved Pictures"
+os.chdir(path)
+cv2.imwrite("discoloured.png", pikachu)
+cv2.imwrite("Openedcv.png", opencv)
+b, g, r = cv2.split(opencv)
+cv2.imshow("screen3", b)
+cv2.waitKey(0)
+cv2.imshow("screen4", g)
+cv2.waitKey(0)
+cv2.imshow("screen5", r)
+cv2.waitKey(0)"""
+print(opencv.shape)
+print(opencv[105, 110])
+opencv[105, 110] = (0, 0, 255 )
+cv2.imshow("screen", opencv)
+cv2.waitKey(0)
